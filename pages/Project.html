@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icones/1087815.png">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Project Portfiolio</title>
+    <style>
+
+        .Project .boxs .box{
+            margin-bottom: 10px;
+            margin-right: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .Project .boxs .box img{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            padding-left: 10px;
+        }
+
+        .Project .boxs .box:hover img{
+            transform: scale(1.2);
+            rotate: -4deg;
+            transition: 0.6s ease-out;
+        }
+
+        .Project .boxs .box .box-hover{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: #111111b9;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.6s;
+            opacity: 0;
+        }
+
+        .Project .boxs .box:hover .box-hover{
+            opacity: 1;
+        }
+
+        .Project .boxs .box .box-hover span{
+            color:#54f000;
+            font-size: 25px;
+        }
+
+        section{
+            margin-top: 70px;
+        }
+
+        h1{
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+        }
+
+        span{
+            color: #54f000;
+        }
+
+        .boxs{
+            display: grid;
+            grid-template-columns:auto auto auto;  
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="#" class="logo">Portfolio</a>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li class="active"><a href="Project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section id="Project" class="Project">
+    <h1>Latest <span>Projects</span></h1>
+                
+        <div class="contanier">
+            <div class="boxs">
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Landing Page</span>
+                    </div>
+                        <img class="img" src="../img/project 1.png" alt="">
+                </div>
+        
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Landing Page</span>
+                    </div>
+                        <img class="img" src="../img/project 2.png" alt="">
+                </div>
+        
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Landing Page</span>
+                    </div>
+                        <img class="img" src="../img/project 3.jpg" alt="">
+                </div>
+        
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Landing Page</span>
+                    </div>
+                        <img class="img" src="../img/project 4.jpg" alt="">
+                </div>
+        
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Landing Page</span>
+                    </div>
+                        <img class="img" src="../img/project 5.jpg" alt="">
+                </div>
+        
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Landing Page</span>
+                    </div>
+                        <img class="img" src="../img/project 6.png" alt="">
+                </div>
+        
+            </div>
+        </div>
+</section>
+</body>
+</html>
